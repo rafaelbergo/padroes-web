@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato — ApostaConsciente</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Fale com a equipe do projeto ApostaConsciente." />
+</head>
+<body>
+  <!-- Sprite para logo -->
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <symbol id="logo-acon" viewBox="0 0 140 44">
+        <rect x="1" y="1" width="138" height="42" rx="10" fill="currentColor" opacity="0.08"/>
+        <circle cx="24" cy="22" r="11" fill="currentColor"/>
+        <path d="M34 12 L46 22 L34 32" fill="currentColor"/>
+        <text x="56" y="28" font-size="16" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Página inicial">
+      <svg class="brand-logo" role="img" aria-label="Logo ApostaConsciente"><use href="#logo-acon"></use></svg>
+      <span class="brand-text">ApostaConsciente</span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <ul class="menu">
+        <li><a href="index.html#ranking">Ranking</a></li>
+        <li><a href="guia.html">Guia</a></li>
+        <li><a href="estatisticas.html">Estatísticas</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a aria-current="page" href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="intro" aria-labelledby="c1">
+    <h1 id="c1">Fale com a equipe</h1>
+    <form class="form" action="#" method="post" aria-describedby="form-desc">
+      <p id="form-desc">Formulário ilustrativo para fins acadêmicos (não envia dados).</p>
+      <label>
+        <span>Nome</span>
+        <input type="text" name="nome" required autocomplete="name" />
+      </label>
+      <label>
+        <span>E-mail</span>
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>
+        <span>Mensagem</span>
+        <textarea name="mensagem" rows="5" required></textarea>
+      </label>
+      <button type="submit">Enviar</button>
+    </form>
+    <p class="nota-legal">Ajuda imediata: CVV 188 (24h) e SAMU 192.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Projeto acadêmico — ApostaConsciente</p>
+    <p>Grupo: <strong>Fulano</strong>, <strong>Ciclano</strong>, <strong>Beltrano</strong></p>
+  </footer>
+</body>
+</html>
