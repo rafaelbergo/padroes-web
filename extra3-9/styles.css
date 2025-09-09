@@ -16,6 +16,16 @@ html, body{
     background: var(--background);
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 /* Header */
 .site-header{
     display: flex; 
@@ -79,8 +89,7 @@ a:active {
 
 .intro,
 .sobre,
-.contato
-{
+.contato {
     max-width: 1100px;
     margin: 2rem auto;
     padding: 1.25rem;
@@ -94,7 +103,6 @@ a:active {
     margin: 2rem auto;
     padding: 1.25rem;
     background: var(--background);
-    border: 1px solid var(--border);
     border-radius: 16px; 
 }
 
