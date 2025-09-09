@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Estatísticas — ApostaConsciente</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Estatísticas e referências sobre vício em sites de apostas: definição, prevalência, harms, ajuda e ferramentas." />
+  <meta name="description"
+    content="Estatísticas e referências sobre vício em sites de apostas: definição, prevalência, harms, ajuda e ferramentas." />
 </head>
+
 <body>
   <!-- Sprite (logo + ícones) -->
   <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <defs>
-      <symbol id="logo-acon" viewBox="0 0 140 44">
-        <rect x="1" y="1" width="138" height="42" rx="10" fill="currentColor" opacity="0.08"/>
-        <circle cx="24" cy="22" r="11" fill="currentColor"/>
-        <path d="M34 12 L46 22 L34 32" fill="currentColor"/>
-        <text x="56" y="28" font-size="16" font-family="system-ui,-apple-system,Segoe UI,Roboto,Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
+      <!-- Logo -->
+      <symbol id="logo-acon" viewBox="0 0 280 60">
+        <rect x="1" y="1" width="338" height="58" rx="10" fill="currentColor" opacity="0.08" />
+        <circle cx="24" cy="30" r="11" fill="currentColor" />
+        <path d="M34 20 L46 30 L34 40" fill="currentColor" />
+        <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+          fill="currentColor" font-weight="700">ApostaConsciente</text>
       </symbol>
       <symbol id="ic-book" viewBox="0 0 24 24">
-        <path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M7 4v13a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M7 4v13a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2" />
       </symbol>
       <symbol id="ic-heart" viewBox="0 0 24 24">
-        <path d="M12 21s-7-4.6-9-8.5C1.3 8.6 3.9 6 7 6c2 0 3.3 1 5 3 1.7-2 3-3 5-3 3.1 0 5.7 2.6 4 6.5C19 16.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path
+          d="M12 21s-7-4.6-9-8.5C1.3 8.6 3.9 6 7 6c2 0 3.3 1 5 3 1.7-2 3-3 5-3 3.1 0 5.7 2.6 4 6.5C19 16.4 12 21 12 21z"
+          fill="none" stroke="currentColor" stroke-width="2" />
       </symbol>
       <symbol id="ic-shield" viewBox="0 0 24 24">
-        <path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="2" />
       </symbol>
       <symbol id="ic-help" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 1-1 1.7V14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="12" cy="18" r="1" fill="currentColor"/>
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 1-1 1.7V14" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" />
+        <circle cx="12" cy="18" r="1" fill="currentColor" />
       </symbol>
     </defs>
   </svg>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Voltar ao início">
-      <svg class="brand-logo" role="img" aria-label="Logo ApostaConsciente"><use href="#logo-acon"></use></svg>
-      <span class="brand-text">ApostaConsciente</span>
+    <a class="main-icon" href="index.html" aria-label="Página inicial">
+      <svg class="main-icon-logo" role="img" aria-label="Logo ApostaConsciente">
+        <use href="#logo-acon"></use>
+      </svg>
+      <span class="main-icon-text">ApostaConsciente</span>
     </a>
     <nav aria-label="Navegação principal">
       <ul class="menu">
-        <li><a href="index.html#ranking">Ranking</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="guia.html">Guia</a></li>
         <li><a aria-current="page" href="estatisticas.html">Estatísticas</a></li>
         <li><a href="sobre.html">Sobre</a></li>
@@ -54,17 +64,29 @@
   <main id="conteudo">
     <!-- 1. Definição -->
     <section id="definicao" class="intro" aria-labelledby="d1">
-      <h1 id="d1"><svg class="icon"><use href="#ic-book"></use></svg> Definição clínica (DSM-5) e sinais</h1>
-      <p>O <strong>Transtorno do Jogo</strong> (DSM-5/DSM-5-TR) é um padrão persistente e recorrente de comportamento de apostar que continua apesar de prejuízos significativos. O diagnóstico exige <em>pelo menos quatro</em> critérios em 12 meses (por exemplo: necessidade de apostar quantias crescentes, inquietação quando tenta parar, <em>chasing losses</em>, mentir para encobrir, prejuízo em relações/trabalho/estudos). <a target="_blank" rel="noopener noreferrer" href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">Fonte — APA</a></p>
+      <h1 id="d1"><svg class="icon">
+          <use href="#ic-book"></use>
+        </svg> Definição clínica (DSM-5) e sinais</h1>
+      <p>O <strong>Transtorno do Jogo</strong> (DSM-5/DSM-5-TR) é um padrão persistente e recorrente de comportamento de
+        apostar que continua apesar de prejuízos significativos. O diagnóstico exige <em>pelo menos quatro</em>
+        critérios em 12 meses (por exemplo: necessidade de apostar quantias crescentes, inquietação quando tenta parar,
+        <em>chasing losses</em>, mentir para encobrir, prejuízo em relações/trabalho/estudos). <a target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">Fonte —
+          APA</a></p>
       <ul class="stats-grid" role="list">
-        <li class="stat"><strong>Sinais comuns</strong><span>Perda de controle, tolerância/“apostas maiores”, continuar apesar de perdas, <em>craving</em>.</span></li>
-        <li class="stat"><strong>Comorbidades</strong><span>Depressão, ansiedade, uso de substâncias são frequentes.</span></li>
+        <li class="stat"><strong>Sinais comuns</strong><span>Perda de controle, tolerância/“apostas maiores”, continuar
+            apesar de perdas, <em>craving</em>.</span></li>
+        <li class="stat"><strong>Comorbidades</strong><span>Depressão, ansiedade, uso de substâncias são
+            frequentes.</span></li>
       </ul>
     </section>
 
     <!-- 2. Prevalência -->
     <section id="prevalencia" class="intro" aria-labelledby="p1">
-      <h2 id="p1"><svg class="icon"><use href="#ic-book"></use></svg> Prevalência global recente</h2>
+      <h2 id="p1"><svg class="icon">
+          <use href="#ic-book"></use>
+        </svg> Prevalência global recente</h2>
       <ul class="stats-grid" role="list">
         <li class="stat">
           <strong>46,2%</strong>
@@ -82,54 +104,87 @@
           <small>Distribuições variam por região/sexo.</small>
         </li>
       </ul>
-      <p>Detalhes metodológicos: 366 amostras de 68 países; taxas mais altas em homens (49,1% vs 37,4% em mulheres) e em Australásia (≈70%). <a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Fonte — Tran et al., 2024</a></p>
+      <p>Detalhes metodológicos: 366 amostras de 68 países; taxas mais altas em homens (49,1% vs 37,4% em mulheres) e em
+        Australásia (≈70%). <a target="_blank" rel="noopener noreferrer"
+          href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Fonte — Tran et al., 2024</a></p>
     </section>
 
     <!-- 3. Harms -->
     <section id="harms" class="intro" aria-labelledby="h1">
-      <h2 id="h1"><svg class="icon"><use href="#ic-shield"></use></svg> Harms à saúde e ao orçamento</h2>
-      <p>A <strong>OMS</strong> destaca que o jogo pode aumentar a incidência de <em>transtornos mentais</em> e <em>suicídio</em>, além de provocar <strong>pobreza</strong> ao desviar gastos essenciais do domicílio. <a target="_blank" rel="noopener noreferrer" href="https://www.who.int/news-room/fact-sheets/detail/gambling">Fonte — Ficha informativa, OMS</a></p>
+      <h2 id="h1"><svg class="icon">
+          <use href="#ic-shield"></use>
+        </svg> Harms à saúde e ao orçamento</h2>
+      <p>A <strong>OMS</strong> destaca que o jogo pode aumentar a incidência de <em>transtornos mentais</em> e
+        <em>suicídio</em>, além de provocar <strong>pobreza</strong> ao desviar gastos essenciais do domicílio. <a
+          target="_blank" rel="noopener noreferrer"
+          href="https://www.who.int/news-room/fact-sheets/detail/gambling">Fonte — Ficha informativa, OMS</a></p>
       <ul class="stats-grid" role="list">
-        <li class="stat"><strong>Saúde mental</strong><span>Maior risco de depressão, ansiedade e ideação suicida.</span></li>
-        <li class="stat"><strong>Financeiro</strong><span>Endividamento, inadimplência e conflitos familiares.</span></li>
-        <li class="stat"><strong>Sistema de saúde</strong><span>Demanda crescente por serviços especializados (ex.: expansão de clínicas NHS).</span></li>
+        <li class="stat"><strong>Saúde mental</strong><span>Maior risco de depressão, ansiedade e ideação
+            suicida.</span></li>
+        <li class="stat"><strong>Financeiro</strong><span>Endividamento, inadimplência e conflitos familiares.</span>
+        </li>
+        <li class="stat"><strong>Sistema de saúde</strong><span>Demanda crescente por serviços especializados (ex.:
+            expansão de clínicas NHS).</span></li>
       </ul>
-      <p class="refs">Leitura complementar: posição da OMS (2024) e reportagens sobre expansão de clínicas especializadas.</p>
+      <p class="refs">Leitura complementar: posição da OMS (2024) e reportagens sobre expansão de clínicas
+        especializadas.</p>
     </section>
 
     <!-- 4. Ajuda -->
     <section id="ajuda" class="intro" aria-labelledby="a1">
-      <h2 id="a1"><svg class="icon"><use href="#ic-heart"></use></svg> Onde buscar ajuda (Brasil)</h2>
+      <h2 id="a1"><svg class="icon">
+          <use href="#ic-heart"></use>
+        </svg> Onde buscar ajuda (Brasil)</h2>
       <p>Procure atendimento em saúde mental (SUS/particular) e redes de apoio. Exemplos:</p>
       <ul>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos — Brasil</a> (grupos presenciais; veja endereços regionais)</li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.grupojaonline.com.br/">Jogadores Anônimos On-line</a> (reuniões via Teams)</li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos —
+            Brasil</a> (grupos presenciais; veja endereços regionais)</li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.grupojaonline.com.br/">Jogadores Anônimos
+            On-line</a> (reuniões via Teams)</li>
         <li><strong>CVV 188</strong> (apoio emocional 24h) e <strong>SAMU 192</strong> em emergências</li>
       </ul>
     </section>
 
     <!-- 5. Ferramentas -->
     <section id="ferramentas" class="intro" aria-labelledby="f1">
-      <h2 id="f1"><svg class="icon"><use href="#ic-help"></use></svg> Autoexclusão e bloqueadores</h2>
-      <p>Programas de <strong>autoexclusão</strong> e <strong>bloqueadores</strong> ajudam a criar barreiras enquanto a pessoa busca tratamento:</p>
+      <h2 id="f1"><svg class="icon">
+          <use href="#ic-help"></use>
+        </svg> Autoexclusão e bloqueadores</h2>
+      <p>Programas de <strong>autoexclusão</strong> e <strong>bloqueadores</strong> ajudam a criar barreiras enquanto a
+        pessoa busca tratamento:</p>
       <ul>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware — ferramentas e autoexclusão</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.gamblingcommission.gov.uk/public-and-players/page/self-exclusion">Guia de autoexclusão (Gambling Commission, UK)</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware —
+            ferramentas e autoexclusão</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.gamblingcommission.gov.uk/public-and-players/page/self-exclusion">Guia de autoexclusão
+            (Gambling Commission, UK)</a></li>
       </ul>
-      <p>Observação: políticas e disponibilidade variam por país; verifique mecanismos equivalentes no Brasil conforme regulamentação vigente.</p>
+      <p>Observação: políticas e disponibilidade variam por país; verifique mecanismos equivalentes no Brasil conforme
+        regulamentação vigente.</p>
     </section>
 
     <!-- Referências -->
     <section class="sobre" aria-labelledby="r1">
       <h2 id="r1">Referências</h2>
       <ol class="refs-list">
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">APA — What is Gambling Disorder?</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.who.int/news-room/fact-sheets/detail/gambling">OMS — Gambling (Fact Sheet)</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Tran et al., 2024 — Meta-análise global</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware — Bloqueio e autoexclusão</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.gamblingcommission.gov.uk/public-and-players/page/self-exclusion">Gambling Commission — Self-exclusion</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos Brasil</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.grupojaonline.com.br/">Jogadores Anônimos — Reuniões on-line</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">APA — What
+            is Gambling Disorder?</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.who.int/news-room/fact-sheets/detail/gambling">OMS — Gambling (Fact Sheet)</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Tran et al.,
+            2024 — Meta-análise global</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware —
+            Bloqueio e autoexclusão</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.gamblingcommission.gov.uk/public-and-players/page/self-exclusion">Gambling Commission —
+            Self-exclusion</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos
+            Brasil</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://www.grupojaonline.com.br/">Jogadores Anônimos —
+            Reuniões on-line</a></li>
       </ol>
       <p class="nota-legal">Site educativo. Se estiver em risco, procure ajuda especializada.</p>
     </section>
@@ -140,4 +195,5 @@
     <p>Grupo: <strong>Fulano</strong>, <strong>Ciclano</strong>, <strong>Beltrano</strong></p>
   </footer>
 </body>
+
 </html>
