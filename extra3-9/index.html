@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ApostaConsciente — Vício em Sites de Apostas</title>
+  <title>ApostaConsciente</title>
   <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="description"
@@ -15,13 +15,18 @@
   <!-- Sprite de ícones e logo em SVG -->
   <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden">
     <defs>
-      <!-- Logo -->
-      <symbol id="logo-acon" viewBox="0 0 140 44">
-        <rect x="1" y="1" width="138" height="42" rx="10" fill="currentColor" opacity="0.08" />
-        <circle cx="24" cy="22" r="11" fill="currentColor" />
-        <path d="M34 12 L46 22 L34 32" fill="currentColor" />
-        <text x="56" y="28" font-size="16" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
-          fill="currentColor" font-weight="700">ApostaConsciente</text>
+      <!-- Logo 
+      <symbol id="logo-acon" viewBox="0 0 200 45">
+        <rect x="1" y="1" width="138" height="42" rx="10" fill="currentColor" opacity="0.08"/>
+        <circle cx="24" cy="22" r="11" fill="currentColor"/>
+        <path d="M34 12 L46 22 L34 32" fill="currentColor"/>
+        <text x="56" y="28" font-size="16" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
+      </symbol>-->
+      <symbol id="logo-acon" viewBox="0 0 280 60">
+        <rect x="1" y="1" width="338" height="58" rx="10" fill="currentColor" opacity="0.08"/>
+        <circle cx="24" cy="30" r="11" fill="currentColor"/>
+        <path d="M34 20 L46 30 L34 40" fill="currentColor"/>
+        <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
       </symbol>
 
       <!-- Ícones -->
@@ -56,11 +61,9 @@
   </svg>
 
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Página inicial">
-      <svg class="brand-logo" role="img" aria-label="Logo ApostaConsciente">
-        <use href="#logo-acon"></use>
-      </svg>
-      <span class="brand-text">ApostaConsciente</span>
+    <a class="main-icon" href="index.html" aria-label="Página inicial">
+      <svg class="main-icon-logo" role="img" aria-label="Logo ApostaConsciente"><use href="#logo-acon"></use></svg>
+      <span class="main-icon-text">ApostaConsciente</span>
     </a>
     <nav aria-label="Navegação principal">
       <ul class="menu">
@@ -85,7 +88,7 @@
     </section>
 
     <!-- RANKING DE LINKS -->
-    <section id="ranking" aria-labelledby="titulo-ranking">
+    <section class="ranking" aria-labelledby="titulo-ranking">
       <h2 id="titulo-ranking"><svg class="icon">
           <use href="#ic-link"></use>
         </svg> Ranking de links</h2>
