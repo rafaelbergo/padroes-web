@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ApostaConsciente — Ranking de Links</title>
-  <link rel="preload" href="styles.css" as="style">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
-  <meta name="description" content="Ranking de links e estatísticas sobre vício em sites de apostas, sinais de alerta e onde buscar ajuda.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ApostaConsciente</title>
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description"
+    content="Ranking de links e estatísticas sobre vício em sites de apostas, sinais de alerta e onde buscar ajuda." />
 </head>
 
 <body>
+  <!-- Sprite de ícones e logo em SVG -->
   <svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden">
     <defs>
       <!-- Logo -->
       <symbol id="logo-acon" viewBox="0 0 280 60">
-        <rect x="1" y="1" width="278" height="58" rx="10" fill="currentColor" opacity="0.08"/>
+        <rect x="1" y="1" width="338" height="58" rx="10" fill="currentColor" opacity="0.08"/>
         <circle cx="24" cy="30" r="11" fill="currentColor"/>
         <path d="M34 20 L46 30 L34 40" fill="currentColor"/>
         <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
@@ -25,6 +26,64 @@
         <path d="M34 20 L46 30 L34 40" fill="currentColor" />
         <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
           fill="currentColor" font-weight="700">ApostaConsciente</text>
+      </symbol>
+
+      <!-- Ícones -->
+      <symbol id="ic-alert" viewBox="0 0 24 24">
+        <path d="M12 3l10 18H2L12 3z" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="12" cy="17" r="1.5" fill="currentColor" />
+        <path d="M12 8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ic-heart" viewBox="0 0 24 24">
+        <path
+          d="M12 21s-7-4.6-9-8.5C1.3 8.6 3.9 6 7 6c2 0 3.3 1 5 3 1.7-2 3-3 5-3 3.1 0 5.7 2.6 4 6.5C19 16.4 12 21 12 21z"
+          fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-book" viewBox="0 0 24 24">
+        <path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M7 4v13a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-help" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 1-1 1.7V14" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" />
+        <circle cx="12" cy="18" r="1" fill="currentColor" />
+      </symbol>
+      <symbol id="ic-link" viewBox="0 0 24 24">
+        <path d="M10 14a5 5 0 0 1 0-7l2-2a5 5 0 0 1 7 7l-1 1" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M14 10a5 5 0 0 1 0 7l-2 2a5 5 0 1 1-7-7l1-1" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-shield" viewBox="0 0 24 24">
+        <path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+
+      <!-- Ícones -->
+      <symbol id="ic-alert" viewBox="0 0 24 24">
+        <path d="M12 3l10 18H2L12 3z" fill="none" stroke="currentColor" stroke-width="2" />
+        <circle cx="12" cy="17" r="1.5" fill="currentColor" />
+        <path d="M12 8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ic-heart" viewBox="0 0 24 24">
+        <path
+          d="M12 21s-7-4.6-9-8.5C1.3 8.6 3.9 6 7 6c2 0 3.3 1 5 3 1.7-2 3-3 5-3 3.1 0 5.7 2.6 4 6.5C19 16.4 12 21 12 21z"
+          fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-book" viewBox="0 0 24 24">
+        <path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M7 4v13a3 3 0 0 0 3 3" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-help" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 1-1 1.7V14" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" />
+        <circle cx="12" cy="18" r="1" fill="currentColor" />
+      </symbol>
+      <symbol id="ic-link" viewBox="0 0 24 24">
+        <path d="M10 14a5 5 0 0 1 0-7l2-2a5 5 0 0 1 7 7l-1 1" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M14 10a5 5 0 0 1 0 7l-2 2a5 5 0 1 1-7-7l1-1" fill="none" stroke="currentColor" stroke-width="2" />
+      </symbol>
+      <symbol id="ic-shield" viewBox="0 0 24 24">
+        <path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6l7-3z" fill="none" stroke="currentColor" stroke-width="2" />
       </symbol>
     </defs>
   </svg>
@@ -48,42 +107,42 @@
   </header>
 
   <main id="conteudo">
+
     <section class="intro" aria-labelledby="titulo-intro">
       <h1 id="titulo-intro">Vício em sites de apostas: sinais, dados e onde buscar ajuda</h1>
       <p>Este material educativo traz um <strong>ranking de links</strong> confiáveis, além de
         <strong>estatísticas</strong> de pesquisas recentes e recursos de apoio. Os links abrem em nova aba.
       </p>
-      <p class="nota-responsavel">
-		<i class="fa-solid fa-heart icon" aria-hidden="true"></i>
-		Jogue com responsabilidade. Se estiver em risco, procure ajuda.
-	  </p>
+      <p class="nota-responsavel"><svg class="icon">
+          <use href="#ic-heart"></use>
+        </svg> Jogue com responsabilidade. Se estiver em risco, procure ajuda.</p>
     </section>
 
     <!-- RANKING DE LINKS -->
     <section class="ranking" aria-labelledby="titulo-ranking">
-      <h2 id="titulo-ranking">
-        <i class="fa-solid fa-link icon" aria-hidden="true"></i>
-        Ranking de links
-      </h2>
-
+      <h2 id="titulo-ranking"><svg class="icon">
+          <use href="#ic-link"></use>
+        </svg>Ranking de links</h2>
       <ol class="ranking-list">
         <!-- 1 -->
         <li class="rank-item rank-1">
           <article>
             <header class="item-head">
-              <span class="posicao">
-                <span class="sr-only">Primeiro lugar</span>#1
-              </span>
+              <span class="posicao" aria-label="primeiro lugar">#1</span>
               <h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.nsctotal.com.br/noticias/5-sinais-para-reconhecer-a-compulsao-em-jogos-de-apostas">
+                <a target="_blank"
+                  href="https://www.nsctotal.com.br/noticias/5-sinais-para-reconhecer-a-compulsao-em-jogos-de-apostas">
                   Sinais de alerta
                 </a>
               </h3>
-              <span class="tag"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Problema</span>
+              <span class="tag"><svg class="icon">
+                  <use href="#ic-alert"></use>
+                </svg> Problema
             </header>
             <figure class="thumb">
-              <img alt="sinais de alerta" src="imagens/sinais_alerta.png">
-              <figcaption>5 sinais para reconhecer a compulsão em jogos de apostas.</figcaption>
+              <img alt="sinais de alerta" src="imagens/sinais_alerta.png" />
+              <figcaption>5 sinais para reconhecer a compulsão em jogos de apostas.
+              </figcaption>
             </figure>
             <p class="justificativa">Está em primeiro lugar porque reconhecer os sinais é o passo inicial mais
               importante para lidar com o vício. Sem identificar o problema, não há como buscar ajuda ou usar
@@ -95,16 +154,19 @@
         <li class="rank-item rank-2">
           <article>
             <header class="item-head">
-              <span class="posicao"><span class="sr-only">Segundo lugar</span>#2</span>
+              <span class="posicao">#2</span>
               <h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.cnnbrasil.com.br/economia/negocios/setor-de-apostas-online-cresceu-734-desde-2021-aponta-pesquisa/">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://www.cnnbrasil.com.br/economia/negocios/setor-de-apostas-online-cresceu-734-desde-2021-aponta-pesquisa/">
                   Dados e estatísticas
                 </a>
               </h3>
-              <span class="tag"><i class="fa-solid fa-book" aria-hidden="true"></i> Problema</span>
+              <span class="tag"><svg class="icon">
+                  <use href="#ic-book"></use>
+                </svg> Indicadores</span>
             </header>
             <figure class="thumb">
-              <img alt="dados e estatísticas" src="imagens/dados_estatisticas.webp">
+              <img alt="dados e estatísticas" src="imagens/dados_estatisticas.webp" />
               <figcaption>Setor de apostas online cresceu 734% desde 2021, aponta pesquisa.</figcaption>
             </figure>
             <p class="justificativa">Em segundo lugar, porque depois de reconhecer os sinais, é essencial entender a
@@ -117,16 +179,18 @@
         <li class="rank-item rank-3">
           <article>
             <header class="item-head">
-              <span class="posicao"><span class="sr-only">Terceiro lugar</span>#3</span>
+              <span class="posicao">#3</span>
               <h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://unolife.com.br/terapia-para-vicio-em-bets/">
+                <a target="_blank" href="https://unolife.com.br/terapia-para-vicio-em-bets/">
                   Apoio e tratamento
                 </a>
               </h3>
-              <span class="tag"><i class="fa-solid fa-heart" aria-hidden="true"></i> Problema</span>
+              <span class="tag"><svg class="icon">
+                  <use href="#ic-heart"></use>
+                </svg> Ajuda</span>
             </header>
             <figure class="thumb">
-              <img alt="apoio e tratamento" src="imagens/apoio_tratamento.avif">
+              <img alt="apoio e tratamento" src="imagens/apoio_tratamento.avif" />
               <figcaption>Terapia para vício em bets: saiba como tratar o problema.</figcaption>
             </figure>
             <p class="justificativa">Vem em terceiro lugar, pois uma vez que a pessoa reconhece o problema e entende sua
@@ -140,17 +204,21 @@
         <li class="rank-item rank-4">
           <article>
             <header class="item-head">
-              <span class="posicao"><span class="sr-only">Quarto lugar</span>#4</span>
+              <span class="posicao">#4</span>
               <h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas/jogo-responsavel">
+                <a target="_blank"
+                  href="https://www.gov.br/fazenda/pt-br/composicao/orgaos/secretaria-de-premios-e-apostas/jogo-responsavel">
                   Políticas públicas
                 </a>
               </h3>
-              <span class="tag"><i class="fa-solid fa-book" aria-hidden="true"></i> Problema</span>
+              <span class="tag"><svg class="icon">
+                  <use href="#ic-book"></use>
+                </svg> Medidas</span>
             </header>
             <figure class="thumb">
-              <img alt="políticas públicas" src="imagens/politicas_publicas.jpg">
-              <figcaption>Jogo responsável: promover uma experiência segura e minimizar riscos do jogo descontrolado.</figcaption>
+              <img alt="políticas públicas" src="imagens/politicas_publicas.jpg" />
+              <figcaption>O objetivo do jogo responsável é promover uma experiência de jogo segura e saudável para os
+                participantes, bem como minimizar os riscos associados ao jogo excessivo ou descontrolado</figcaption>
             </figure>
             <p class="justificativa">Em quarto lugar, porque além da responsabilidade individual, existem esforços
               coletivos e institucionais. As políticas públicas são importantes, mas dependem de debates, leis e
@@ -162,17 +230,19 @@
         <li class="rank-item rank-5">
           <article>
             <header class="item-head">
-              <span class="posicao"><span class="sr-only">Quinto lugar</span>#5</span>
+              <span class="posicao">#5</span>
               <h3>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.gazetaesportiva.com/apostas/guias/como-bloquear-sites-de-apostas">
+                <a target="_blank" href="https://www.gazetaesportiva.com/apostas/guias/como-bloquear-sites-de-apostas">
                   Ferramentas de bloqueio
                 </a>
               </h3>
-              <span class="tag"><i class="fa-solid fa-shield" aria-hidden="true"></i> Problema</span>
+              <span class="tag"><svg class="icon">
+                  <use href="#ic-shield"></use>
+                </svg> Ferramentas</span>
             </header>
             <figure class="thumb">
-              <img alt="ferramentas de bloqueio" src="imagens/ferramentas_bloqueio.webp">
-              <figcaption>Como bloquear sites de apostas — tutorial e dicas (2025).</figcaption>
+              <img alt="ferramentas de bloqueio" src="imagens/ferramentas_bloqueio.webp" />
+              <figcaption>Como bloquear sites de apostas - tutorial e dicas(2025)</figcaption>
             </figure>
             <p class="justificativa">Ocupam o quinto lugar pois, embora úteis, são complementares. Elas ajudam a reduzir
               a exposição, mas sozinhas não resolvem o problema se a pessoa não reconhecer os sinais e não buscar ajuda.
@@ -184,11 +254,10 @@
 
     <!-- ESTATÍSTICAS -->
     <section id="estatisticas" class="intro" aria-labelledby="titulo-est">
-      <h2 id="titulo-est">
-        <i class="fa-solid fa-chart-column icon" aria-hidden="true"></i>
-        Estatísticas rápidas
-      </h2>
-      <ul class="stats-grid">
+      <h2 id="titulo-est"><svg class="icon">
+          <use href="#ic-book"></use>
+        </svg> Estatísticas rápidas</h2>
+      <ul class="stats-grid" role="list">
         <li class="stat">
           <strong>46,2%</strong>
           <span>dos adultos globalmente apostaram nos últimos 12 meses.</span>
@@ -212,19 +281,28 @@
     <section class="sobre" aria-labelledby="refs-titulo">
       <h2 id="refs-titulo">Referências</h2>
       <ol class="refs-list">
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">American Psychiatric Association — Gambling Disorder</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.who.int/news-room/fact-sheets/detail/gambling">OMS — Gambling (Fact Sheet)</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Tran et al., 2024 — Meta-análise da prevalência</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos — Brasil</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware — Bloqueadores e autoexclusão</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.psychiatry.org/patients-families/gambling-disorder/what-is-gambling-disorder">American
+            Psychiatric Association — Gambling Disorder</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.who.int/news-room/fact-sheets/detail/gambling">OMS — Gambling (Fact Sheet)</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://pubmed.ncbi.nlm.nih.gov/39025095/">Tran et al.,
+            2024 — Meta-análise da prevalência</a></li>
+        <li><a target="_blank" rel="noopener noreferrer" href="https://jogadoresanonimos.com.br/">Jogadores Anônimos
+            Brasil</a></li>
+        <li><a target="_blank" rel="noopener noreferrer"
+            href="https://www.gambleaware.org/tools-and-support/gambling-blocking-and-self-exclusion/">GambleAware —
+            Bloqueadores e autoexclusão</a></li>
       </ol>
-      <p class="nota-legal">Este site é educativo, não incentiva apostas. Em emergência emocional no Brasil: 188 (CVV) e SAMU 192.</p>
+      <p class="nota-legal">Este site é educativo, não incentiva apostas. Se você estiver em emergência emocional, no
+        Brasil ligue 188 (CVV) ou procure o SAMU (192).</p>
     </section>
-  </main>
+	</main>
 
-  <footer class="site-footer">
-    <p>Projeto ApostaConsciente</p>
-    <p>Equipe: <strong>Giovani Limas Salvi</strong> e <strong>Rafael Carvalho Bergo</strong></p>
-  </footer>
+	<footer class="site-footer">
+		<p>Projeto ApostaConsciente</p>
+		<p>Equipe: <strong>Giovani Limas Salvi</strong> e <strong>Rafael Carvalho Bergo</strong></p>
+	</footer>
 </body>
+
 </html>

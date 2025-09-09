@@ -284,7 +284,7 @@ h3 {
 
 button {
     background: var(--accent);
-    color: var(--text);
+    color: var(--text#0b1020);
     border: none;
     padding: .7rem 1rem;
     border-radius: 10px;

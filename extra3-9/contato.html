@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contato — ApostaConsciente</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="imagens/favicon.png" type="image/png">
-  <meta name="description" content="Fale com a equipe do projeto ApostaConsciente.">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato — ApostaConsciente</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Fale com a equipe do projeto ApostaConsciente." />
 </head>
 
 <body>
-  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
-    <defs>
-      <!-- Logo -->
-      <symbol id="logo-acon" viewBox="0 0 280 60">
-        <rect x="1" y="1" width="338" height="58" rx="10" fill="currentColor" opacity="0.08"/>
-        <circle cx="24" cy="30" r="11" fill="currentColor"/>
-        <path d="M34 20 L46 30 L34 40" fill="currentColor"/>
-        <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" fill="currentColor" font-weight="700">ApostaConsciente</text>
-      </symbol>
-    </defs>
-  </svg>
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+        <defs>
+            <!-- Logo -->
+            <symbol id="logo-acon" viewBox="0 0 280 60">
+                <rect x="1" y="1" width="338" height="58" rx="10" fill="currentColor" opacity="0.08" />
+                <circle cx="24" cy="30" r="11" fill="currentColor" />
+                <path d="M34 20 L46 30 L34 40" fill="currentColor" />
+                <text x="56" y="38" font-size="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial"
+                    fill="currentColor" font-weight="700">ApostaConsciente</text>
+            </symbol>
+        </defs>
+    </svg>
 
-  <header class="site-header">
-    <a class="main-icon" href="index.html" aria-label="Página inicial">
-      <svg class="main-icon-logo" role="img" aria-label="Logo ApostaConsciente">
-        <use href="#logo-acon"></use>
-      </svg>
-      <span class="main-icon-text">ApostaConsciente</span>
-    </a>
-    <nav aria-label="Navegação principal">
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="guia.html">Guia</a></li>
-        <li><a href="estatisticas.html">Estatísticas</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a aria-current="page" href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header">
+        <a class="main-icon" href="index.html" aria-label="Página inicial">
+            <svg class="main-icon-logo" role="img" aria-label="Logo ApostaConsciente">
+                <use href="#logo-acon"></use>
+            </svg>
+            <span class="main-icon-text">ApostaConsciente</span>
+        </a>
+        <nav aria-label="Navegação principal">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guia.html">Guia</a></li>
+                <li><a href="estatisticas.html">Estatísticas</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a aria-current="page" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="intro" aria-labelledby="c1">
-    <h1 id="c1">Fale com a equipe</h1>
-    <form class="form" action="#" method="post" aria-describedby="form-desc">
-      <p id="form-desc">Entre em contato com a nossa equipe a partir do formulário abaixo.</p>
+    <main class="intro" aria-labelledby="c1">
+        <h1 id="c1">Fale com a equipe</h1>
+        <form class="form" action="#" method="post" aria-describedby="form-desc">
+            <p id="form-desc">Entre em contato com a nossa equipe a partir do formulário abaixo.</p>
+            <label>
+                <span>Nome</span>
+                <input type="text" name="nome" required />
+            </label>
+            <label>
+                <span>Email</span>
+                <input type="email" name="email" required />
+            </label>
+            <label>
+                <span>Mensagem</span>
+                <textarea name="mensagem" rows="3" required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
 
-      <label>
-        <span>Nome</span>
-        <input type="text" name="nome" required autocomplete="name">
-      </label>
-
-      <label>
-        <span>E-mail</span>
-        <input type="email" name="email" required autocomplete="email">
-      </label>
-
-      <label>
-        <span>Mensagem</span>
-        <textarea name="mensagem" rows="3" required></textarea>
-      </label>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </main>
-
-  <footer class="site-footer">
-    <p>Projeto ApostaConsciente</p>
-    <p>Equipe: <strong>Giovani Limas Salvi</strong> e <strong>Rafael Carvalho Bergo</strong></p>
-  </footer>
+    <footer class="site-footer">
+        <p>Projeto ApostaConsciente</p>
+        <p>Equipe: <strong>Giovani Limas Salvi</strong> e <strong>Rafael Carvalho Bergo</strong></p>
+    </footer>
 </body>
+
 </html>
