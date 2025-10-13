@@ -2,21 +2,144 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Formulários</title>
+    <title>Formulário Musical</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <h1>Formulários</h1>
+        <h1>Formulário de Interesses Musicais</h1>
         <div class="texto-header">
-            
+            Preencha os dados abaixo para registrar seus interesses musicais.
         </div>
     </header>
 
     <main>
+        <form id="formulario-musical">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div class="informacoes-pessoais">
+                    <div class="foto-perfil">
+                        <img src="img/img_profile.png" alt="Foto de Perfil" id="foto-perfil">
+                    </div>
+                    <div class="dados-pessoais">
+                        <label for="nome">Nome <span class="obrigatorio">*</span></label>
+                        <input type="text" id="nome" name="nome" required autofocus placeholder="Digite seu nome completo">
+                        
+                        <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                        
+                        <label for="telefone">Telefone <span class="obrigatorio">*</span></label>
+                        <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" required placeholder="(99) 99999-9999">
+                        
+                        <label for="data-nascimento">Data de Nascimento <span class="obrigatorio">*</span></label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required placeholder="dd/mm/aaaa">
+                        
+                        <label for="foto-perfil">Foto de Perfil</label>
+                        <input type="file" id="foto-perfil-upload" name="foto-perfil-upload" accept="image/*">
+                    </div>
+                </div>
+            </fieldset>
 
+            <fieldset>
+                <legend>Preferências Musicais</legend>
+
+                <label>Estilos Musicais Preferidos <span class="obrigatorio">*</span></label><br>
+                <label for="rock">
+                    <input type="checkbox" id="rock" name="estilos" value="rock"> Rock
+                </label>
+                <label for="pop">
+                    <input type="checkbox" id="pop" name="estilos" value="pop"> Pop
+                </label>
+                <label for="classica">
+                    <input type="checkbox" id="classica" name="estilos" value="classica"> Música Clássica
+                </label>
+                <label for="sertanejo">
+                    <input type="checkbox" id="sertanejo" name="estilos" value="sertanejo"> Sertanejo
+                </label>
+                <label for="eletronica">
+                    <input type="checkbox" id="eletronica" name="estilos" value="eletronica"> Eletrônica
+                </label>
+
+                <label for="albuns">Selecione 3 álbuns preferidos:</label><br>
+                <label for="album1">
+                    <input type="checkbox" id="album1" name="albuns" value="album1"> Highway to Hell
+                </label>
+                <label for="album2">
+                    <input type="checkbox" id="album2" name="albuns" value="album2"> Paranoid
+                </label>
+                <label for="album3">
+                    <input type="checkbox" id="album3" name="albuns" value="album3"> From Zero
+                </label>                
+                <label for="album4">
+                    <input type="checkbox" id="album4" name="albuns" value="album4"> Master Of Puppets
+                </label>
+                <label for="album5">
+                    <input type="checkbox" id="album5" name="albuns" value="album5"> Metallica
+                </label>                
+                <label for="album6">
+                    <input type="checkbox" id="album6" name="albuns" value="album6"> Californication
+                </label>
+
+                <div class="artistas-lista">
+                    <label for="artistas">Lista de artistas:</label><br>
+                    <textarea id="artistas" name="artistas" rows="4" placeholder="Liste seus artistas favoritos"></textarea>
+                </div>
+                
+                <label for="melhor-cantor">Qual o melhor cantor da história?</label>
+                <select id="melhor-cantor" name="melhor-cantor">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <optgroup label="Rock">
+                        <option value="freddie-mercury">Freddie Mercury (Queen)</option>
+                        <option value="mick-jagger">Mick Jagger (The Rolling Stones)</option>
+                        <option value="robert-plant">Robert Plant (Led Zeppelin)</option>
+                        <option value="ozzy-osbourne">Ozzy Osbourne (Black Sabbath)</option>
+                        <option value="bruce-springsteen">Bruce Springsteen</option>
+                        <option value="axl-rose">Axl Rose (Guns N' Roses)</option>
+                        <option value="kurt-cobain">Kurt Cobain (Nirvana)</option>
+                        <option value="eddie-vedder">Eddie Vedder (Pearl Jam)</option>
+                        <option value="steven-tyler">Steven Tyler (Aerosmith)</option>
+                        <option value="bruce-dickinson">Bruce Dickinson (Iron Maiden)</option>
+                    </optgroup>
+                   <optgroup label="Pop">
+                        <option value="madonna">Madonna</option>
+                        <option value="michael-jackson">Michael Jackson</option>
+                        <option value="beyonce">Beyoncé</option>
+                        <option value="prince">Prince</option>
+                        <option value="whitney-houston">Whitney Houston</option>
+                        <option value="lady-gaga">Lady Gaga</option>
+                        <option value="justin-timberlake">Justin Timberlake</option>
+                        <option value="britney-spears">Britney Spears</option>
+                    </optgroup>
+                    <optgroup label="Música Clássica">
+                        <option value="andrea-bocelli">Andrea Bocelli</option>
+                        <option value="luciano-pavarotti">Luciano Pavarotti</option>
+                        <option value="maria-callas">Maria Callas</option>
+                        <option value="placido-domingo">Plácido Domingo</option>
+                    </optgroup>
+                    <optgroup label="Sertanejo">
+                        <option value="zeze-di-camargo">Zezé Di Camargo</option>
+                        <option value="chitaozinho-xororo">Chitãozinho & Xororó</option>
+                        <option value="gusttavo-lima">Gusttavo Lima</option>
+                        <option value="marilia-mendonca">Marília Mendonça</option>
+                    </optgroup>
+                    <optgroup label="Eletrônica">
+                        <option value="david-guetta">David Guetta</option>
+                        <option value="calvin-harris">Calvin Harris</option>
+                        <option value="avicii">Avicii</option>
+                        <option value="alesso">Alesso</option>
+                        <option value="alok">Alok</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="reset" id="limpar">Limpar</button>
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </form>
     </main>
 
     <footer>
