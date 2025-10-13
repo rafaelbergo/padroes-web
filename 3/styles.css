@@ -39,3 +39,174 @@ footer {
     padding: 20px 10px;
     margin-top: 40px;
 }
+
+fieldset {
+    border: 2px solid lightskyblue;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.artistas-lista {
+    width: 97%;
+    resize: vertical;
+    min-height: 15px;
+}
+
+#melhor-cantor {
+    width: 25%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #82c1df;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    background-color: #aaa;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+.obrigatorio {
+    color: red;
+    font-weight: bold;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #009688;
+    box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes-pessoais {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.foto-perfil {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 32px;
+    margin-left: 8px;
+}
+
+.foto-perfil img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    background: #f8f8f8;
+}
+
+.dados-pessoais {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados-pessoais label {
+    font-size: 1.1em;
+}
+
+.dados-pessoais input[type="text"],
+.dados-pessoais input[type="email"],
+.dados-pessoais input[type="tel"],
+.dados-pessoais input[type="date"],
+.dados-pessoais input[type="file"] {
+    font-size: 0.95em;
+    padding: 6px 8px;
+    width: 97%;
+    max-width: 100%;
+}
+
+/* Estilos para responsividade: ajusta layout para telas menores */
+@media (max-width: 768px) {
+    /* Alinha informações pessoais em coluna */
+    .informacoes-pessoais {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Reduz margens e tamanho da foto de perfil */
+    .foto-perfil {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .foto-perfil img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Reduz padding do main e fieldset */
+    main {
+        padding: 10px;
+    }
+    fieldset {
+        padding: 8px;
+    }
+
+    /* Inputs, textarea e select ocupam toda largura e têm padding menor */
+    .dados-pessoais input[type="text"],
+    .dados-pessoais input[type="email"],
+    .dados-pessoais input[type="tel"],
+    .dados-pessoais input[type="date"],
+    .dados-pessoais input[type="file"],
+    #artistas,
+    select {
+        font-size: 1em;
+        width: 100%;
+        padding: 8px 6px;
+    }
+
+    /* Botões menores e alinhados em coluna*/
+    button {
+        font-size: 0.95em;
+        padding: 8px 12px;
+    }
+    .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
